@@ -9,6 +9,7 @@ void main() async {
     size: Size(1280, 720),
     minimumSize: Size(1280, 720),
     skipTaskbar: false,
+    center: true
   );
   windowManager.waitUntilReadyToShow(windowOptions, () async {
     await windowManager.show();

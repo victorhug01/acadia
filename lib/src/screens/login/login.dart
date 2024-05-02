@@ -1,4 +1,6 @@
+import 'package:acadia/src/theme/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:window_manager/window_manager.dart';
 
 class LoginPage extends StatefulWidget {
@@ -46,7 +48,7 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
               ),
               TextButton(
                 child: const Text('Yes'),
-                onPressed: () async{
+                onPressed: () async {
                   Navigator.of(context).pop();
                   await windowManager.destroy();
                 },
@@ -57,12 +59,50 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
       );
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: const Center(
-        child: Text('Teste'),
+      appBar: AppBar(
+        leading: const Text('Logo'),
+      ),
+      body: Form(
+        child: Row(
+          children: [
+            Expanded(
+              flex: 1,
+              child: Padding(
+                padding: const EdgeInsets.all(130.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    TextFormField(
+                      decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(
+                            color: ColorSchemeManagerClass.colorPrimary,
+                            style: BorderStyle.solid,
+                            width: 3,
+                          ),
+                        )
+                      ),
+                      autofocus: false,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: SizedBox(
+                height: 450,
+                width: 450,
+                child: SvgPicture.asset('assets/undraw_access_account.svg'),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
