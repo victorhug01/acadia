@@ -1,3 +1,4 @@
+import 'package:acadia/src/screens/login/components/textformfield_local/textformfield_c.dart';
 import 'package:acadia/src/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -38,16 +39,16 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
         context: context,
         builder: (_) {
           return AlertDialog(
-            title: const Text('Are you sure you want to close this window?'),
+            title: const Text('Você realmente deseja fechar o aplicativo?'),
             actions: [
               TextButton(
-                child: const Text('No'),
+                child: const Text('Cancelar'),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
               ),
               TextButton(
-                child: const Text('Yes'),
+                child: const Text('Confirmar'),
                 onPressed: () async {
                   Navigator.of(context).pop();
                   await windowManager.destroy();
@@ -64,7 +65,13 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Text('Logo'),
+        leading: SizedBox(
+          child: Image.asset(
+            "assets/acadia_escrito.png",
+            fit: BoxFit.cover,
+          ),
+        ),
+        leadingWidth: 200,
       ),
       body: Form(
         child: Row(
@@ -72,33 +79,92 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
             Expanded(
               flex: 1,
               child: Padding(
-                padding: const EdgeInsets.all(130.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    TextFormField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide(
-                            color: ColorSchemeManagerClass.colorPrimary,
-                            style: BorderStyle.solid,
-                            width: 3,
-                          ),
-                        )
+                padding: EdgeInsets.symmetric(
+                  horizontal:
+                      MediaQuery.sizeOf(context).width >= 1280 ? 120.0 : 50.0,
+                  vertical: 30.0,
+                ),
+                child: SizedBox(
+                  height: 550,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        height: 117.0,
+                        child: Image.asset('assets/icon.png'),
                       ),
-                      autofocus: false,
-                    ),
-                  ],
+                      Text(
+                        'Seja bem-vindo(a)',
+                        style: TextStyle(
+                          color: ColorSchemeManagerClass.colorPrimary,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 23,
+                        ),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          const TextFormComponent(textLabel: 'RM'),
+                          const TextFormComponent(textLabel: 'Senha'),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 20),
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: TextButton(
+                                child: Text(
+                                  'Esqueci minha senha!',
+                                  style: TextStyle(
+                                    color: ColorSchemeManagerClass.colorPrimary,
+                                    decoration: TextDecoration.underline,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: SizedBox(
+                          width: double.infinity,
+                          height: 55,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: ColorSchemeManagerClass.colorPrimary,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(17),
+                              )
+                            ),
+                            child: Text(
+                              'Entrar',
+                              style: TextStyle(
+                                color: ColorSchemeManagerClass.colorSecondary,
+                                fontSize: 22
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
             Expanded(
               flex: 1,
-              child: SizedBox(
-                height: 450,
-                width: 450,
-                child: SvgPicture.asset('assets/undraw_access_account.svg'),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    child: SvgPicture.asset(
+                      'assets/undraw_access_account.svg',
+                      height: 450.0,
+                    ),
+                  ),
+                ],
               ),
             )
           ],
