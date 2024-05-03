@@ -1,5 +1,5 @@
 import 'package:acadia/src/components/appbar/appbar.dart';
-import 'package:acadia/src/screens/login/components/textformfield_local/textformfield_c.dart';
+import 'package:acadia/src/screens/forgot_password/components/confirmation_code/confirmation_component.dart';
 import 'package:acadia/src/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -38,6 +38,7 @@ class _ConfirmCodePageState extends State<ConfirmCodePage> {
                     fontSize: 23,
                   ),
                 ),
+                const ConfirmationCodeComponent(),
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: SizedBox(
