@@ -31,18 +31,12 @@ class _ConfirmCodePageState extends State<ConfirmCodePage> {
                   child: Image.asset('assets/icon.png'),
                 ),
                 Text(
-                  'Digite o email cadastrado.',
+                  'Digite o código enviado no email.',
                   style: TextStyle(
                     color: ColorSchemeManagerClass.colorPrimary,
                     fontWeight: FontWeight.w500,
                     fontSize: 23,
                   ),
-                ),
-                const Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    TextFormComponent(textLabel: 'Email'),
-                  ],
                 ),
                 Padding(
                   padding: const EdgeInsets.all(20.0),

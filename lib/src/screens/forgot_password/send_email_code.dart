@@ -50,7 +50,9 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                     width: double.infinity,
                     height: 55,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/confirmCodePage');
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: ColorSchemeManagerClass.colorPrimary,
                         shape: RoundedRectangleBorder(
@@ -60,8 +62,9 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                       child: Text(
                         'Enviar',
                         style: TextStyle(
-                            color: ColorSchemeManagerClass.colorSecondary,
-                            fontSize: 22),
+                          color: ColorSchemeManagerClass.colorSecondary,
+                          fontSize: 22,
+                        ),
                       ),
                     ),
                   ),

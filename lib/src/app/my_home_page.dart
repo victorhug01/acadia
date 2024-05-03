@@ -1,4 +1,6 @@
-import 'package:acadia/src/screens/forgot_password/forgot_password.dart';
+import 'package:acadia/src/screens/forgot_password/confirm_code.dart';
+import 'package:acadia/src/screens/forgot_password/send_email_code.dart';
+import 'package:acadia/src/screens/login/login.dart';
 import 'package:acadia/src/screens/splash/splash_screen.dart';
 import 'package:acadia/src/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -28,8 +30,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/splash': (_) => const SplashScreen(),
+        '/splashScreen': (_) => const SplashScreen(),
         '/forgotPassword': (_) => const ForgotPasswordPage(),
+        '/confirmCodePage': (_) => const ConfirmCodePage(),
+        '/loginPage': (_) => const LoginPage(),
       },
       home: const SplashScreen(),
     );

@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
     bool isPreventClose = await windowManager.isPreventClose();
     if (isPreventClose) {
       showDialog(
-        context: context,
+        context: context, 
         builder: (_) {
           return AlertDialog(
             title: const Text('Você realmente deseja fechar o aplicativo?'),
