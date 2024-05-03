@@ -1,3 +1,4 @@
+import 'package:acadia/src/screens/forgot_password/forgot_password.dart';
 import 'package:acadia/src/screens/login/components/textformfield_local/textformfield_c.dart';
 import 'package:acadia/src/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,6 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
   }
 
   void _init() async {
-    // Add this line to override the default close handler
     await windowManager.setPreventClose(true);
     setState(() {});
   }
@@ -119,7 +119,9 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/forgotPassword');
+                                },
                               ),
                             ),
                           ),
@@ -133,17 +135,17 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: ColorSchemeManagerClass.colorPrimary,
+                              backgroundColor:
+                                  ColorSchemeManagerClass.colorPrimary,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(17),
-                              )
+                              ),
                             ),
                             child: Text(
                               'Entrar',
                               style: TextStyle(
-                                color: ColorSchemeManagerClass.colorSecondary,
-                                fontSize: 22
-                              ),
+                                  color: ColorSchemeManagerClass.colorSecondary,
+                                  fontSize: 22),
                             ),
                           ),
                         ),
