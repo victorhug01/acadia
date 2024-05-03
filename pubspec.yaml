@@ -42,6 +42,21 @@ dependencies:
   connectivity_plus: ^6.0.3
   get: ^4.6.6
 
+flutter_icons:
+  image_path: "assets/icon.png"
+  ios: false
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icon.png"
+  web:
+    generate: false
+  windows:
+    generate: true
+    image_path: "assets/icon.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icon.png"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
