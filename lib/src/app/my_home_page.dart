@@ -2,7 +2,6 @@ import 'package:acadia/src/screens/forgot_password/forgot_password.dart';
 import 'package:acadia/src/screens/splash/splash_screen.dart';
 import 'package:acadia/src/theme/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyApp extends StatelessWidget {
