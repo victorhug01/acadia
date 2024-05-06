@@ -1,4 +1,4 @@
-import 'package:acadia/src/screens/login/components/textformfield_local/textformfield_c.dart';
+import 'package:acadia/src/components/textformfield_local/textformfield_c.dart';
 import 'package:acadia/src/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -103,8 +103,8 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          const TextFormComponent(textLabel: 'RM'),
-                          const TextFormComponent(textLabel: 'Senha'),
+                           const TextFormComponent(textLabel: 'RM'),
+                           const TextFormComponent(textLabel: 'Senha'),
                           Padding(
                             padding: const EdgeInsets.only(right: 20),
                             child: MouseRegion(
@@ -132,7 +132,9 @@ class _LoginPageState extends State<LoginPage> with WindowListener {
                           width: double.infinity,
                           height: 55,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushReplacementNamed(context, '/myHomePage');
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor:
                                   ColorSchemeManagerClass.colorPrimary,

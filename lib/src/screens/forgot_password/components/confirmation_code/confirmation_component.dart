@@ -1,4 +1,3 @@
-import 'package:acadia/src/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -37,14 +36,7 @@ class ContainerNumbers extends StatefulWidget {
 }
 
 class _ContainerNumbersState extends State<ContainerNumbers> {
-  final bool isColor = false;
-  void colorFunction() {
-    if(isColor == true){
-      ColorSchemeManagerClass.colorPrimary;
-    }else{
-      ColorSchemeManagerClass.colorSecondary;
-    }
-  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -53,7 +45,7 @@ class _ContainerNumbersState extends State<ContainerNumbers> {
         height: 50,
         width: 50,
         child: TextFormField(
-        textAlign: TextAlign.center,
+          textAlign: TextAlign.center,
           decoration: InputDecoration(
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
@@ -64,7 +56,6 @@ class _ContainerNumbersState extends State<ContainerNumbers> {
             FilteringTextInputFormatter.digitsOnly,
           ],
           onChanged: (value) {
-            colorFunction();
             if (value.length == 1) {
               FocusScope.of(context).nextFocus();
             }

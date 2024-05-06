@@ -21,7 +21,7 @@ class _ConfirmCodePageState extends State<ConfirmCodePage> {
       body: Form(
         child: Center(
           child: SizedBox(
-            height: 450,
+            height: 600,
             width: 450,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -31,7 +31,8 @@ class _ConfirmCodePageState extends State<ConfirmCodePage> {
                   child: Image.asset('assets/icon.png'),
                 ),
                 Text(
-                  'Digite o código enviado no email.',
+                  'Digite o código enviado\nno email fornecido.',
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     color: ColorSchemeManagerClass.colorPrimary,
                     fontWeight: FontWeight.w500,
@@ -45,7 +46,9 @@ class _ConfirmCodePageState extends State<ConfirmCodePage> {
                     width: double.infinity,
                     height: 55,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/changePasswordPage');
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: ColorSchemeManagerClass.colorPrimary,
                         shape: RoundedRectangleBorder(

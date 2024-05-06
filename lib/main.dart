@@ -1,4 +1,4 @@
-import 'package:acadia/src/app/my_home_page.dart';
+import 'package:acadia/src/app/my_app.dart';
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
 

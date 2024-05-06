@@ -3,16 +3,14 @@ import 'package:acadia/src/components/textformfield_local/textformfield_c.dart';
 import 'package:acadia/src/theme/theme.dart';
 import 'package:flutter/material.dart';
 
-class ForgotPasswordPage extends StatefulWidget {
-  const ForgotPasswordPage({super.key});
+class ChangePasswordPage extends StatefulWidget {
+  const ChangePasswordPage({super.key});
 
   @override
-  State<ForgotPasswordPage> createState() => _ForgotPasswordPageState();
+  State<ChangePasswordPage> createState() => _ChangePasswordPageState();
 }
 
-final TextEditingController controller = TextEditingController();
-
-class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
+class _ChangePasswordPageState extends State<ChangePasswordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,24 +24,26 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
             height: 600,
             width: 450,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
                   height: 117.0,
                   child: Image.asset('assets/icon.png'),
                 ),
                 Text(
-                  'Digite o email cadastrado.',
+                  'Agora vamos redefinir a\nsenha!',
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     color: ColorSchemeManagerClass.colorPrimary,
                     fontWeight: FontWeight.w500,
                     fontSize: 23,
                   ),
                 ),
-                 const Column(
+                const Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    TextFormComponent(textLabel: 'Email'),
+                    TextFormComponent(textLabel: 'Digite uma senha'),
+                    TextFormComponent(textLabel: 'Confirmar a sua senha'),
                   ],
                 ),
                 Padding(
@@ -52,9 +52,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                     width: double.infinity,
                     height: 55,
                     child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/confirmCodePage');
-                      },
+                      onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: ColorSchemeManagerClass.colorPrimary,
                         shape: RoundedRectangleBorder(
@@ -62,11 +60,10 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                         ),
                       ),
                       child: Text(
-                        'Enviar',
+                        'Confirmar',
                         style: TextStyle(
-                          color: ColorSchemeManagerClass.colorSecondary,
-                          fontSize: 22,
-                        ),
+                            color: ColorSchemeManagerClass.colorSecondary,
+                            fontSize: 22),
                       ),
                     ),
                   ),
