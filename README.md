@@ -6,12 +6,19 @@ Acadia é um sistema acadêmico aberto e flexível projetado para atender às ne
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Principais Recursos
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  - Gestão de Alunos: Cadastro completo de alunos, incluindo informações pessoais, histórico acadêmico e dados de contato.
+  
+  - Acompanhamento de Notas: Facilidade na inserção e consulta de notas, permitindo aos professores registrarem o desempenho dos alunos de forma organizada e acessível.
+  
+  - Gestão de Disciplinas: Administração eficiente de disciplinas, permitindo o cadastro, edição e exclusão de disciplinas de forma simples.
+  
+  - Calendário Acadêmico: Visualização de eventos acadêmicos importantes, como datas de provas, feriados e eventos institucionais.
+  
+  - Comunicação Integrada: Recurso de mensagens internas para facilitar a comunicação entre alunos, professores e administração.
+  
+  - Gestão de Horários: Possibilidade de criação e consulta de horários de aula para alunos e professores, facilitando o planejamento e organização das atividades acadêmicas.
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
