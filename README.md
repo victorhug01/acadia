@@ -20,6 +20,8 @@ Principais Recursos
   
   - Gestão de Horários: Possibilidade de criação e consulta de horários de aula para alunos e professores, facilitando o planejamento e organização das atividades acadêmicas.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Para obter mais informações, entre em contato com nosso e-mail
+
+  - [Victor Hugo - Desenvolvedor](victor.pereira178@etec.sp.gov.br).
+  - [Maria Fernanda - Designer](maria.francoia@etec.sp.gov.br).
+  - [Monique Evelyn - Designer](monique.santos122@etec.sp.gov.br).
