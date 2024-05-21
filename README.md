@@ -1,4 +1,4 @@
-![acdia Image](https://github.com/victorhug01/acadia/assets/106313212/35bd8362-ed56-4dfb-b4d1-4e6346c35c99)
+![acdia](https://github.com/victorhug01/acadia/assets/106313212/07a7b0e6-1658-4dc8-99d5-e9cb0192b021)
 
 # Acadia
 
