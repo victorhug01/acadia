@@ -1,4 +1,4 @@
-# acadia
+# Acadia
 
 Acadia é um sistema acadêmico aberto e flexível projetado para atender às necessidades das instituições de ensino em gerenciamento de informações acadêmicas. Desde o acompanhamento de notas até a gestão de horários e comunicação entre alunos e professores, Acadia oferece uma plataforma robusta para simplificar e melhorar os processos educacionais.
 
