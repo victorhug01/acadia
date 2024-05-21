@@ -1,3 +1,5 @@
+![acdia Image](https://github.com/victorhug01/acadia/assets/106313212/35bd8362-ed56-4dfb-b4d1-4e6346c35c99)
+
 # Acadia
 
 Acadia é um sistema acadêmico aberto e flexível projetado para atender às necessidades das instituições de ensino em gerenciamento de informações acadêmicas. Desde o acompanhamento de notas até a gestão de horários e comunicação entre alunos e professores, Acadia oferece uma plataforma robusta para simplificar e melhorar os processos educacionais.
