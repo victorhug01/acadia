@@ -20,6 +20,6 @@ Acadia é um sistema acadêmico aberto e flexível projetado para atender às ne
 
 Para obter mais informações, entre em contato com nosso e-mail
 
-  - [Victor Hugo - Desenvolvedor](victor.pereira178@etec.sp.gov.br).
-  - [Maria Fernanda - Designer](maria.francoia@etec.sp.gov.br).
-  - [Monique Evelyn - Designer](monique.santos122@etec.sp.gov.br).
+  - [Victor Hugo - Desenvolvedor e designer](victor.pereira178@etec.sp.gov.br).
+  - [Maria Fernanda - Designer e documentação](maria.francoia@etec.sp.gov.br).
+  - [Monique Evelyn - Designer e documentação](monique.santos122@etec.sp.gov.br).
